@@ -1,0 +1,85 @@
+/* src/styles/AdminPanel.css */
+
+.admin-layout {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+}
+
+.section-container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.section-header h2 {
+    margin: 0 0 10px 0;
+    color: #2c3e50;
+}
+
+.section-header p {
+    color: #7f8c8d;
+    margin: 0 0 20px 0;
+}
+
+.admin-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+
+.admin-table th {
+    text-align: left;
+    padding: 15px;
+    background: #34495e;
+    color: white;
+}
+
+.admin-table td {
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.admin-table tr:hover {
+    background: #f9f9f9;
+}
+
+.table-responsive {
+    overflow-x: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Buttons */
+button {
+    font-family: inherit;
+}
+
+/* Form inputs */
+input, select {
+    font-family: inherit;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+}
+
+/* Dashboard cards */
+.dashboard-container {
+    padding: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .admin-sidebar {
+        width: 60px !important;
+    }
+    
+    .admin-sidebar .sidebar-header h2,
+    .admin-sidebar nav button span:last-child {
+        display: none;
+    }
+}
